@@ -7,6 +7,11 @@
 <p align="center">📱 一个基于<a href="https://github.com/Moonofweisheng/wot-design-uni.git">Wot Design Uni</a>开发的零售模板，界面设计来自于
 <a href="https://github.com/Tencent/tdesign-miniprogram-starter-retail">tdesign-miniprogram-starter-retail</a>。</p>
 
+<p align="center">
+  🚀 <a href="[https://wot-design-uni.cn/](https://moonofweisheng.gitee.io/wot-starter-retail/#/)">文档网站 (Gitee)</a>&nbsp;
+  🔥 <a href="[https://wot-design-uni.netlify.app/](https://moonofweisheng.github.io/wot-starter-retail/#/)">文档网站 (Github)</a>
+</p>
+
 
 ## 注意 
 要求 `node >= 16`。
