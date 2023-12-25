@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2023-03-21 22:49:24
- * @LastEditTime: 2023-09-03 13:07:25
+ * @LastEditTime: 2023-12-25 22:29:38
  * @LastEditors: weisheng
  * @Description:
  * @FilePath: \wot-starter-retail\vite.config.ts
@@ -13,7 +13,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 
 export default defineConfig({
-  base: './',
+  base: process.env.NODE_ENV === 'production' ? '/wot-starter-retail/' : './',
   plugins: [
     uni(),
     Unocss(),
