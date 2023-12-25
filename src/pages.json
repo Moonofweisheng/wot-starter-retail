@@ -1,0 +1,92 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue"
+    }
+  },
+  "pages": [{
+      "path": "pages/home/Home",
+      "name": "home",
+      "style": {
+        "mp-alipay": {
+          "allowsBounceVertical": "NO"
+        },
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/goods/category/index",
+      "name": "category",
+      "style": {
+        "mp-alipay": {
+          "allowsBounceVertical": "NO"
+        },
+        "navigationBarTitleText": "分类"
+      }
+    },
+    {
+      "path": "pages/usercenter/index",
+      "name": "usercenter",
+      "style": {
+        "mp-alipay": {
+          "allowsBounceVertical": "NO"
+        },
+        "navigationBarTitleText": "个人中心",
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F5F5"
+      }
+    },
+    {
+      "path": "pages/cart/index",
+      "name": "cart",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#E7F0FF"
+      }
+    }
+  ],
+  "subPackages": [{
+    "root": "pagesA",
+    "pages": [{
+        "path": "routerDemo/RouterDemo",
+        "name": "routerDemo",
+        "style": {
+          "navigationBarTitleText": "",
+          "navigationBarBackgroundColor": "#E7F0FF"
+        }
+      },
+      {
+        "path": "routerDemo/RouterDemo1",
+        "name": "routerDemo1",
+        "style": {
+          "navigationBarTitleText": "",
+          "navigationBarBackgroundColor": "#E7F0FF"
+        }
+      }
+    ]
+  }],
+  "tabBar": {
+    "color": "#bfbfbf",
+    "custom": true,
+    "height": "0",
+    "selectedColor": "#0165FF",
+    "list": [{
+        "pagePath": "pages/home/Home"
+      },
+      {
+        "pagePath": "pages/goods/category/index"
+      },
+      {
+        "pagePath": "pages/cart/index"
+      },
+      {
+        "pagePath": "pages/usercenter/index"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#FFF"
+  }
+}
