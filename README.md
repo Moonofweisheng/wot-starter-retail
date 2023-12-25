@@ -9,6 +9,18 @@
 
 
 <p align="center">
+
+<a href="https://github.com/Moonofweisheng/wot-starter-retail">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Moonofweisheng/wot-starter-retail?logo=github&color=%234d80f0&link=https%3A%2F%2Fgithub.com%2FMoonofweisheng%2Fwot-starter-retail">
+ </a>
+
+<a href="https://github.com/Moonofweisheng/wot-starter-retail">
+  <img alt="GitHub" src="https://img.shields.io/github/license/Moonofweisheng/wot-starter-retail?logo=github">
+ </a>
+
+</p>
+
+<p align="center">
   🚀 <a href="https://moonofweisheng.gitee.io/wot-starter-retail/#/">文档网站 (Gitee)</a>&nbsp;
   🔥 <a href="https://moonofweisheng.github.io/wot-starter-retail/#/">文档网站 (Github)</a>
 </p>
