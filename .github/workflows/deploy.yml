@@ -16,27 +16,27 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
         with:
-          ref: 'master'
+          ref: 'main'
 
-      - name: Install yarn
+      - name: Install pnpm
         run: corepack enable
 
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: 'yarn'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
 
       - name: Build Site
-        run: npm run docs:build
+        run: pnpm build:h5
 
       - name: Deploy for Gitee 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages
-          folder: docs/.vitepress/dist
+          folder: dist/h5
           # enable single-commit to reduce the repo size
           single-commit: true
           clean: true
