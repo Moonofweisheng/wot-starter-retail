@@ -1,6 +1,6 @@
 # Sample workflow for building and deploying a VitePress site to GitHub Pages
 #
-name: Deploy VitePress site to Pages
+name: Deploy Demo site to Pages
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages
-          folder: dist/h5
+          folder: dist/build/h5
           # enable single-commit to reduce the repo size
           single-commit: true
           clean: true
