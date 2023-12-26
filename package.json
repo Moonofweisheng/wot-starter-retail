@@ -6,6 +6,7 @@
     "url": "https://github.com/Moonofweisheng/wot-starter-retail.git"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
