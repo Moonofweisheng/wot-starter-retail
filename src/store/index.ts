@@ -1,12 +1,3 @@
-/*
- * @Author: weisheng
- * @Date: 2023-04-14 12:57:12
- * @LastEditTime: 2023-09-02 22:24:03
- * @LastEditors: weisheng
- * @Description: pinia商店
- * @FilePath: \wot-starter-retail\src\store\index.ts
- * 记得注释
- */
 import UserInfo from '@/model/UserInfo'
 import { defineStore } from 'pinia'
 

@@ -46,26 +46,6 @@
       }
     }
   ],
-  "subPackages": [{
-    "root": "pagesA",
-    "pages": [{
-        "path": "routerDemo/RouterDemo",
-        "name": "routerDemo",
-        "style": {
-          "navigationBarTitleText": "",
-          "navigationBarBackgroundColor": "#E7F0FF"
-        }
-      },
-      {
-        "path": "routerDemo/RouterDemo1",
-        "name": "routerDemo1",
-        "style": {
-          "navigationBarTitleText": "",
-          "navigationBarBackgroundColor": "#E7F0FF"
-        }
-      }
-    ]
-  }],
   "tabBar": {
     "color": "#bfbfbf",
     "custom": true,

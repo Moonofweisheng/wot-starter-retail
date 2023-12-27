@@ -1,9 +1,9 @@
 export const getPermission = ({ code, name }) => {
   return new Promise((resolve, reject) => {
-    wx.getSetting({
+    uni.getSetting({
       success: (res) => {
         if (res.authSetting[code] === false) {
-          wx.showModal({
+          uni.showModal({
             title: `获取${name}失败`,
             content: `获取${name}失败，请在【右上角】-小程序【设置】项中，将【${name}】开启。`,
             confirmText: '去设置',
@@ -11,7 +11,7 @@ export const getPermission = ({ code, name }) => {
             cancelColor: '取消',
             success(res) {
               if (res.confirm) {
-                wx.openSetting({
+                uni.openSetting({
                   success(settinRes) {
                     if (settinRes.authSetting[code] === true) {
                       resolve(true)
