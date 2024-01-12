@@ -21,8 +21,8 @@
 </p>
 
 <p align="center">
-  🚀 <a href="https://moonofweisheng.gitee.io/wot-starter-retail/#/">文档网站 (Gitee)</a>&nbsp;
-  🔥 <a href="https://moonofweisheng.github.io/wot-starter-retail/#/">文档网站 (Github)</a>
+  🚀 <a href="https://wot-design-uni.gitee.io/wot-starter-retail/#/">演示地址 (Gitee)</a>&nbsp;
+  🔥 <a href="https://moonofweisheng.github.io/wot-starter-retail/#/">演示地址 (Github)</a>
 </p>
 
 
