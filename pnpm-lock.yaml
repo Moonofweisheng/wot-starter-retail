@@ -54,8 +54,8 @@ dependencies:
     specifier: ^9.1.9
     version: 9.2.2(vue@3.2.47)
   wot-design-uni:
-    specifier: ^0.2.16
-    version: 0.2.16(vue@3.2.47)
+    specifier: ^1.1.4
+    version: 1.1.4(vue@3.2.47)
 
 devDependencies:
   '@commitlint/cli':
@@ -15509,8 +15509,8 @@ packages:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
     dev: true
 
-  /wot-design-uni@0.2.16(vue@3.2.47):
-    resolution: {integrity: sha512-mry27AvKY6WhEGf0ZomQ/dntsbd3z8wmIBC7dZiisK6cnMM5n/3w/IIwK8j8jsqnNMTfYa6NBdlFcjz2Leuk+w==}
+  /wot-design-uni@1.1.4(vue@3.2.47):
+    resolution: {integrity: sha512-LApsfv8dIOciJlqTxSrHF53y0D37Uj/OPApnp936aMV3D7iY+sXBZzym6U4DKLB9fU23HDp09S/y7Pbgu820Tg==}
     engines: {HBuilderX: ^3.8.7}
     peerDependencies:
       vue: ^3.2.0

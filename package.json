@@ -67,7 +67,7 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-3090620231104002",
     "vue": "^3.2.45",
     "vue-i18n": "^9.1.9",
-    "wot-design-uni": "^0.2.16"
+    "wot-design-uni": "^1.1.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",

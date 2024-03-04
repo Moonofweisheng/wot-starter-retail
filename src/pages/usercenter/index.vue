@@ -1,7 +1,7 @@
 <template>
   <page-wraper>
     <user-center-header :user-info="state.userInfo" isPhoneHide :currAuthStep="state.currAuthStep"></user-center-header>
-    <view class="relative p-x-4 mt-42">
+    <view class="relative p-x-4 pt-42">
       <view class="mb-2">
         <order-group :orderTagInfos="state.orderTagInfos" @onClickTop="jumpAllOrder" @onClickItem="jumpNav" />
       </view>
