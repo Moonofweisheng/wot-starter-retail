@@ -18,7 +18,7 @@
       "@dcloudio/types",
       "miniprogram-api-typings",
       "mini-types",
-      "wot-design-uni/global.d.ts"
+      "wot-design-uni/global"
     ],
     "paths": {
       "@/*": [

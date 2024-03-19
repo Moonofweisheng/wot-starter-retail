@@ -67,7 +67,7 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-3090620231104002",
     "vue": "^3.2.45",
     "vue-i18n": "^9.1.9",
-    "wot-design-uni": "^1.1.9"
+    "wot-design-uni": "^1.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
@@ -111,7 +111,7 @@
     "unplugin-auto-import": "^0.15.3",
     "vite": "4.0.3",
     "vue-eslint-parser": "^9.1.0",
-    "vue-tsc": "^1.0.24"
+    "vue-tsc": "^1.8.27"
   },
   "config": {
     "commitizen": {
