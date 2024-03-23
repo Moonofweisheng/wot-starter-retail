@@ -1,10 +1,4 @@
 {
-  "easycom": {
-    "autoscan": true,
-    "custom": {
-      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue"
-    }
-  },
   "pages": [{
       "path": "pages/home/Home",
       "name": "home",
