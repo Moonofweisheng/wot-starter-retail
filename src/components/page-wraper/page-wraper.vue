@@ -1,7 +1,7 @@
 <!--
  * @Author: weisheng
  * @Date: 2023-11-11 22:37:30
- * @LastEditTime: 2023-11-21 21:01:29
+ * @LastEditTime: 2024-05-14 10:14:39
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: \wot-starter-retail\src\components\page-wraper\page-wraper.vue
@@ -48,5 +48,9 @@ function handleChange({ value }) {
   tabbarStore.setTabbarItemActive(value)
   router.pushTab({ name: value })
 }
+
+onShow(() => {
+  uni.hideTabBar()
+})
 </script>
 <style lang="scss" scoped></style>

@@ -1,10 +1,10 @@
 <!--
  * @Author: weisheng
  * @Date: 2023-03-09 19:23:03
- * @LastEditTime: 2024-01-21 19:04:46
+ * @LastEditTime: 2024-05-14 10:12:50
  * @LastEditors: weisheng
  * @Description: 
- * @FilePath: /wot-starter-retail/src/App.vue
+ * @FilePath: \wot-starter-retail\src\App.vue
  * 记得注释
 -->
 <script setup lang="ts">
@@ -16,6 +16,7 @@ onLaunch((ctx) => {
   console.log('App Launch')
 })
 onShow(() => {
+  uni.hideTabBar()
   console.log('App Show')
 })
 onHide(() => {

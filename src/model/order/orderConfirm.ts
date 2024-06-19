@@ -1,7 +1,7 @@
 import { mockIp, mockReqId } from '../../utils/mock'
 
 export const transformGoodsDataToConfirmData = (goodsDataList) => {
-  const list = []
+  const list: any[] = []
 
   goodsDataList.forEach((goodsData) => {
     list.push({
@@ -46,7 +46,7 @@ export function genSettleDetail(params) {
       totalGoodsCount: 3,
       packageCount: 1,
       totalAmount: '289997',
-      totalPayAmount: '',
+      totalPayAmount: 0,
       totalDiscountAmount: '110000',
       totalPromotionAmount: '1100',
       totalCouponAmount: '0',
@@ -68,7 +68,7 @@ export function genSettleDetail(params) {
           storeTotalPayAmount: '179997',
           storeTotalDiscountAmount: '110000',
           storeTotalCouponAmount: '0',
-          skuDetailVos: [],
+          skuDetailVos: [] as any[],
           couponList: [
             {
               couponId: 11,
@@ -91,13 +91,13 @@ export function genSettleDetail(params) {
     success: true
   }
 
-  const list = transformGoodsDataToConfirmData(goodsRequestList)
+  const list: any[] = transformGoodsDataToConfirmData(goodsRequestList)
 
   // 获取购物车传递的商品数据
   resp.data.storeGoodsList[0].skuDetailVos = list
 
   // 判断是否携带优惠券数据
-  const discountPrice = []
+  const discountPrice: any[] = []
 
   if (couponList && couponList.length > 0) {
     couponList.forEach((coupon) => {

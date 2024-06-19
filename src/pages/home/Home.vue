@@ -19,12 +19,13 @@
       </view>
       <view class="home-main p3 pt-0 pb-0">
         <view class="tabs" v-if="tabList.length">
-          <wd-tabs v-model="currentTab">
-            <wd-tab v-for="(tab, index) in tabList" :title="tab.label" :key="index"></wd-tab>
+          <wd-tabs v-model="currentTab" sticky>
+            <wd-tab v-for="(tab, index) in tabList" :title="tab.label" :key="index">
+              <goods-list :goods="goods" @click="goodListClickHandle" @addcart="goodListAddCartHandle"></goods-list>
+              <wd-loadmore :state="state" @reload="onReTry" />
+            </wd-tab>
           </wd-tabs>
         </view>
-        <goods-list :goods="goods" @click="goodListClickHandle" @addcart="goodListAddCartHandle"></goods-list>
-        <wd-loadmore :state="state" @reload="onReTry" />
       </view>
     </view>
   </page-wraper>

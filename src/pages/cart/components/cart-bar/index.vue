@@ -20,7 +20,7 @@
       </view>
       <view v-if="totalDiscountAmount">
         <text class="cart-bar__total--normal text-padding-right">已优惠</text>
-        <price class="cart-bar__total--normal" :price="totalDiscountAmount || '0'" fill="{{false}}" />
+        <price class="cart-bar__total--normal" :price="totalDiscountAmount || '0'" :fill="false" />
       </view>
     </view>
     <view catchtap="handleToSettle" :class="`${!isDisabled ? '' : 'disabled-btn'} account-btn`" hover-class="{{!isDisabled ? '' : 'hover-btn'}}">
