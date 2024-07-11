@@ -17,12 +17,14 @@
           ></wd-swiper>
         </view>
       </view>
-      <view class="home-main p3 pt-0 pb-0">
+      <view class="home-main pt-0 pb-0">
         <view class="tabs" v-if="tabList.length">
           <wd-tabs v-model="currentTab" sticky>
             <wd-tab v-for="(tab, index) in tabList" :title="tab.label" :key="index">
-              <goods-list :goods="goods" @click="goodListClickHandle" @addcart="goodListAddCartHandle"></goods-list>
-              <wd-loadmore :state="state" @reload="onReTry" />
+              <view class="w-full box-border p-3">
+                <goods-list :goods="goods" @click="goodListClickHandle" @addcart="goodListAddCartHandle"></goods-list>
+                <wd-loadmore :state="state" @reload="onReTry" />
+              </view>
             </wd-tab>
           </wd-tabs>
         </view>

@@ -4,11 +4,11 @@ import { delay } from '../_utils/delay'
 import { getSearchResult } from '../../model/search'
 
 /** 获取商品列表 */
-function mockFetchGoodsList(params) {
-  const data = getSearchResult(params)
+function mockFetchGoodsList(params: any) {
+  const data = getSearchResult()
 
   if (data.spuList.length) {
-    data.spuList.forEach((item) => {
+    data.spuList.forEach((item: any) => {
       item.thumb = item.primaryImage
       item.price = item.minSalePrice
       item.originPrice = item.maxLinePrice

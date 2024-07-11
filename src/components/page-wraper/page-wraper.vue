@@ -1,7 +1,7 @@
 <!--
  * @Author: weisheng
  * @Date: 2023-11-11 22:37:30
- * @LastEditTime: 2024-05-14 10:14:39
+ * @LastEditTime: 2024-07-02 10:28:26
  * @LastEditors: weisheng
  * @Description: 
  * @FilePath: \wot-starter-retail\src\components\page-wraper\page-wraper.vue
@@ -11,7 +11,7 @@
   <wd-config-provider :themeVars="themeVars">
     <wd-notify />
     <wd-toast />
-    <wd-message-box />
+    <!-- <wd-message-box /> -->
     <privacy-popup></privacy-popup>
     <slot></slot>
 

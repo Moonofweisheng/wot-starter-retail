@@ -4,7 +4,7 @@ import { getGoodsCommentsCount } from '../../model/comments'
 
 /** 获取商品评论数 */
 function mockFetchCommentsCount(ID: number = 0): Promise<any> {
-  return delay().then(() => getGoodsCommentsCount(ID))
+  return delay().then(() => getGoodsCommentsCount())
 }
 
 /** 获取商品评论数 */

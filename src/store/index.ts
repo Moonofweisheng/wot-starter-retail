@@ -1,9 +1,8 @@
-import UserInfo from '@/model/UserInfo'
 import { defineStore } from 'pinia'
 
 interface AuthStore {
   // 鉴权令牌
-  userInfo: UserInfo | null
+  userInfo: any | null
 }
 // defineStore 调用后返回一个函数，调用该函数获得 Store 实体
 export const useAuthStore = defineStore('authState', {
