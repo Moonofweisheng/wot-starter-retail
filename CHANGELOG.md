@@ -1,6 +1,13 @@
 # 更新日志 
 
 
+### [0.1.2](https://github.com/Moonofweisheng/wot-starter-retail/compare/v0.1.1...v0.1.2) (2024-07-23)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 🐛 修复部署H5的demo报错的问题 ([4cf136b](https://github.com/Moonofweisheng/wot-starter-retail/commit/4cf136bf73bd78cc5e7892017b1d6e7cba28d07b))
+
 ### [0.1.1](https://github.com/Moonofweisheng/wot-starter-retail/compare/v0.1.0...v0.1.1) (2024-07-23)
 
 ## 0.1.0 (2024-07-11)
