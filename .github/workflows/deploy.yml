@@ -1,0 +1,58 @@
+# Sample workflow for building and deploying a VitePress site to GitHub Pages
+#
+name: Deploy VitePress site to Pages
+
+on:
+  push:
+    tags:
+      - '*'
+
+  workflow_dispatch:
+
+jobs:
+  deploy-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+        with:
+          ref: 'master'
+
+      - name: Install yarn
+        run: corepack enable
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build Site
+        run: npm run docs:build
+
+      - name: Deploy for Gitee 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          branch: gh-pages
+          folder: docs/.vitepress/dist
+          # enable single-commit to reduce the repo size
+          single-commit: true
+          clean: true
+
+      - name: Sync to Gitee
+        uses: wearerequired/git-mirror-action@v1.2.0
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+        with:
+          source-repo: git@github.com:Moonofweisheng/wot-starter-retail.git
+          destination-repo: git@gitee.com:Moonofweisheng/wot-starter-retail.git
+  
+      - name: Build Gitee Pages
+        uses: yanglbme/gitee-pages-action@main
+        with:
+          gitee-username: Moonofweisheng
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-repo: Moonofweisheng/wot-starter-retail
+          branch: gh-pages
