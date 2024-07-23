@@ -1,6 +1,13 @@
 # 更新日志 
 
 
+### [0.1.3](https://github.com/Moonofweisheng/wot-starter-retail/compare/v0.1.2...v0.1.3) (2024-07-23)
+
+
+### ✨ Features | 新功能
+
+* ✨ 指定packageManager ([485cc52](https://github.com/Moonofweisheng/wot-starter-retail/commit/485cc52f1a2469f0ab98412fefa2478c587a2046))
+
 ### [0.1.2](https://github.com/Moonofweisheng/wot-starter-retail/compare/v0.1.1...v0.1.2) (2024-07-23)
 
 
