@@ -1,6 +1,8 @@
 # 更新日志 
 
 
+### [0.1.1](https://github.com/Moonofweisheng/wot-starter-retail/compare/v0.1.0...v0.1.1) (2024-07-23)
+
 ## 0.1.0 (2024-07-11)
 
 
