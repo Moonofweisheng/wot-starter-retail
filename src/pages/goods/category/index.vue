@@ -1,3 +1,12 @@
+<!--
+ * @Author: weisheng
+ * @Date: 2024-07-20 23:52:47
+ * @LastEditTime: 2024-07-21 00:15:43
+ * @LastEditors: weisheng
+ * @Description: 
+ * @FilePath: /wot-starter-retail/src/pages/goods/category/index.vue
+ * 记得注释
+-->
 <template>
   <page-wraper>
     <view class="wrap">
@@ -8,13 +17,13 @@
         <view v-if="goodsList && goodsList.children && goodsList.children.length > 0">
           <block v-for="(item, index) in goodsList.children" :key="index">
             <template v-if="item.children && item.children.length > 0">
-              <view class="flex text-24">
+              <view class="flex text-3">
                 {{ item.name }}
               </view>
               <view class="flex flex-wrap">
-                <view class="flex w-1_3 h-196 flex-col items-center mt-3" v-for="(subItem, subIndex) in item.children" :key="subIndex">
+                <view class="flex w-1/3 h-196rpx flex-col items-center mt-3" v-for="(subItem, subIndex) in item.children" :key="subIndex">
                   <wd-img :src="subItem.thumbnail" width="144rpx" height="144rpx" lazy-load />
-                  <view class="text-24 text-gray-600 mt-3">
+                  <view class="text-3 text-gray-600 mt-3">
                     {{ subItem.name }}
                   </view>
                 </view>

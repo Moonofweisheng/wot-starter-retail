@@ -1,10 +1,10 @@
 <!--
  * @Author: weisheng
  * @Date: 2023-11-21 22:27:38
- * @LastEditTime: 2023-11-23 17:06:44
+ * @LastEditTime: 2024-07-21 00:15:08
  * @LastEditors: weisheng
  * @Description: 
- * @FilePath: \wot-starter-retail\src\pages\usercenter\components\order-group\index.vue
+ * @FilePath: /wot-starter-retail/src/pages/usercenter/components/order-group/index.vue
  * 记得注释
 -->
 <template>
@@ -12,14 +12,14 @@
     <wd-cell-group :border="false" v-if="isTop">
       <wd-cell :title="title" :value="desc" is-link @click="onClickTop" />
     </wd-cell-group>
-    <view class="overflow-hidden w-full h-164 flex bg-white">
+    <view class="overflow-hidden w-full h-164rpx flex bg-white">
       <view
         class="order-group__item overflow-hidden flex flex-auto flex-items-center flex-justify-center flex-col"
         v-for="(item, index) in orderTagInfos"
         :key="index"
         @click="onClickItem"
       >
-        <view class="mb-2 w-56 h-56 relative">
+        <view class="mb-2 w-56rpx h-56rpx relative">
           <wd-badge :model-value="item.orderNum" :max="99" color="#FF4646">
             <wd-icon
               :name="item.iconName"
@@ -28,7 +28,7 @@
             />
           </wd-badge>
         </view>
-        <view class="text-24 line-height-4 text-gray-600">{{ item.title }}</view>
+        <view class="text-3 line-height-4 text-gray-600">{{ item.title }}</view>
       </view>
     </view>
   </view>

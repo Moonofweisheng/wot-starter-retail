@@ -2,7 +2,7 @@
   <view :id="independentID" class="goods-card" @click="clickHandle">
     <view class="goods-card__main">
       <view class="goods-card__thumb" @click="clickThumbHandle">
-        <wd-img v-if="!!goods.thumb" custom-class="goods-card__img" width="340rpx" height="340rpx" :src="goods.thumb" mode="aspectFill" lazy-load />
+        <wd-img v-if="!!goods.thumb" custom-class="goods-card__img" :src="goods.thumb" mode="aspectFill" lazy-load />
       </view>
       <view class="goods-card__body">
         <view class="goods-card__upper">
@@ -203,7 +203,7 @@ function clearIntersectionObserverHandle() {
   margin: 0;
 }
 
-.goods-card__img {
+:deep(.goods-card__img) {
   display: block;
   width: 100%;
   height: 100%;

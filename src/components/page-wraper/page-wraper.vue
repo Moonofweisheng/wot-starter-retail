@@ -1,20 +1,10 @@
-<!--
- * @Author: weisheng
- * @Date: 2023-11-11 22:37:30
- * @LastEditTime: 2024-07-02 10:28:26
- * @LastEditors: weisheng
- * @Description: 
- * @FilePath: \wot-starter-retail\src\components\page-wraper\page-wraper.vue
- * 记得注释
--->
 <template>
   <wd-config-provider :themeVars="themeVars">
     <wd-notify />
     <wd-toast />
-    <!-- <wd-message-box /> -->
+    <wd-message-box />
     <privacy-popup></privacy-popup>
     <slot></slot>
-
     <wd-tabbar fixed :model-value="tabbarStore.getActive.name" @change="handleChange" bordered safeAreaInsetBottom placeholder>
       <wd-tabbar-item name="home" :value="tabbarStore.getTabbarItemValue('home')" title="首页" icon="home"></wd-tabbar-item>
       <wd-tabbar-item name="category" :value="tabbarStore.getTabbarItemValue('category')" title="分类" icon="app"></wd-tabbar-item>
@@ -33,6 +23,7 @@ export default {
 }
 </script>
 <script lang="ts" setup>
+import { ConfigProviderThemeVars } from 'wot-design-uni'
 import { PageWraperProps } from './type'
 
 const router = useRouter()
@@ -40,8 +31,9 @@ const router = useRouter()
 const props = defineProps(PageWraperProps)
 const tabbarStore = useTabbarStore()
 
-const themeVars = reactive({
-  colorTheme: '#fa4126'
+const themeVars = reactive<ConfigProviderThemeVars>({
+  colorTheme: '#fa4126',
+  tabsNavLineBgColor: 'red'
 })
 
 function handleChange({ value }) {
@@ -50,7 +42,9 @@ function handleChange({ value }) {
 }
 
 onShow(() => {
+  // #ifdef APP-PLUS
   uni.hideTabBar()
+  // #endif
 })
 </script>
 <style lang="scss" scoped></style>

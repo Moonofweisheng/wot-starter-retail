@@ -1,14 +1,14 @@
 <!--
  * @Author: weisheng
  * @Date: 2023-11-21 21:11:05
- * @LastEditTime: 2023-11-21 22:13:05
+ * @LastEditTime: 2024-07-21 00:16:23
  * @LastEditors: weisheng
  * @Description: 
- * @FilePath: \wot-starter-retail\src\pages\usercenter\components\user-center-header\index.vue
+ * @FilePath: /wot-starter-retail/src/pages/usercenter/components/user-center-header/index.vue
  * 记得注释
 -->
 <template>
-  <view class="user-center-header fixed top-0 left-0 box-border w-full h-480 p-x-3">
+  <view class="user-center-header fixed top-0 left-0 box-border w-full h-480rpx p-x-3">
     <!-- 未登录的情况 -->
     <block v-if="currAuthStep === 1">
       <view class="header" @click="gotoUserEditPage">

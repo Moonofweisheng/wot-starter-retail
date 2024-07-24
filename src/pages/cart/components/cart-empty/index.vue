@@ -1,6 +1,6 @@
 <template>
   <view class="cart-empty">
-    <wd-img custom-class="cart-img" height="160rpx" width="160rpx" :src="imgUrl" />
+    <wd-img custom-class="cart-img" :src="imgUrl" />
     <view class="tip">{{ tip }}</view>
     <view class="btn" @click="handleClick">{{ btnText }}</view>
   </view>
@@ -37,6 +37,8 @@ function handleClick() {
   background-color: #f5f5f5;
   :deep(.cart-img) {
     margin-bottom: 24rpx;
+    height: 160rpx;
+    width: 160rpx;
   }
 }
 
