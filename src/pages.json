@@ -38,6 +38,14 @@
         "navigationBarTitleText": "",
         "navigationBarBackgroundColor": "#E7F0FF"
       }
+    },
+    {
+      "path": "pages/demo/index",
+      "name": "demo",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#E7F0FF"
+      }
     }
   ],
   "tabBar": {
